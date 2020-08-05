@@ -114,5 +114,56 @@ main {
   border-bottom-right-radius: 8px;
   height: 100%;
   padding: 6px 20px;
-  margin-left: -10px;
+  margin-left: -10px
+ }
+ 
+ .Publish {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+   flex: 1;
+   padding: 0 25px;
+  }
+  .publish h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .publish > form {
+    display: flex;
+  }
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.promo img {
+  width: 120px;
+  margin-top: 10px;
+}
+.go-to-action{
+  display: flex;
+  flex-direction: column;
+
+}
+.fixed-header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
 }
