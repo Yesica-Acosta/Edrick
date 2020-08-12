@@ -183,7 +183,7 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-}
+  }
 
 .promo img {
   width: 120px;
@@ -194,7 +194,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 100px;
+  padding: 10px;
 }
 .fixed-header {
   position: fixed;
@@ -211,7 +211,7 @@ main {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2,1fr)
 }
-.feature-card {
+.features .feature-card {
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #dadada;
@@ -221,18 +221,76 @@ main {
   align-items: center;
   overflow: hidden;
 }
-.feature .feature-card .feacture-content{
+.features .feature-card .feature-content{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   text-align: left;
   padding: 30px 20px 40px 40px;
   flex: 2;
 }
-.features .feature-card .feacture-content> *{
+.features .feature-card .feature-content> *{
   margin-bottom: 1rem;
   margin-top: 0;
+}
+.features .feature-card .feature-content img {
+  width: 50px;
+}
+.features .feature-card .feature-content h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+.features .feature-card .feature-content p {
+  font-size: 16px;
+  color: #343434;
+  font-weight: 400;
+}
+.features .feature-card .feature-content a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
 }
 .features .feature-card .feature-image{
   flex: 1;
 }
 .features .feature-card .feature-image figure img {
   width: 150px;
+}
+@media (max-width: 575px) {
+  .navbar, .actions {
+    display: none;
+  }
+  main {
+  margin-top: 130px;
+ }
+  .section h1 {
+    font-size: 30px;
+  }
+  .section input {
+    width: 190px;
+  }
+  .section > img {
+    width: 100%;
+  }
+  .go-to-action {
+    flex-direction: column ;
+  }
+  .go-to-action .promo video {
+    width: 90%;
+  }
+  .go-to-action .publish input {
+    width: 60%;
+    }
+  .features {
+    padding: 5% 0;
+    grid-template: repeat(4, 1fr) / 1fr ;
+  }
+  .features .feature-card .feature-image {
+    display: none;
+  }
+  .features .feature-card {
+    wi
+  }
+
 }
